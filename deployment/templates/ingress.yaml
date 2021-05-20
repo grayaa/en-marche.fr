@@ -1,0 +1,18 @@
+{{- $fullName := include "deployment.fullname" . -}}
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ $fullName }}
+  labels:
+    {{- include "deployment.labels" . | nindent 4 }}
+  annotations:
+    kubernetes.io/ingress.allow-http: false
+    kubernetes.io/ingress.global-static-ip-name: en-marche-{{ .Values.environment }}
+spec:
+  tls:
+    - secretName: certificate
+  backend:
+    serviceName: {{ $fullName }}
+    servicePort: 80
+
