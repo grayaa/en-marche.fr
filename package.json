@@ -10,7 +10,7 @@
     "lint:watch": "npm run lint -- --watch"
   },
   "dependencies": {
-    "@babel/core": "^7.15.8",
+    "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-react": "^7.14.5",
     "@ckeditor/ckeditor5-build-en-marche": "https://github.com/EnMarche/ckeditor5-build-classic#stable",
@@ -30,7 +30,7 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-import-resolver-webpack": "^0.13.1",
     "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-jsx-a11y": "^6.7.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-watch": "^7.0.0",
     "events": "^3.3.0",
